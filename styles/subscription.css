@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 ul,
 i {
     color: #6200EE !important;
@@ -76,4 +77,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-family: 'Figtree', 'sans-serif'!important;
     font-weight: 500;
     font-size: 14px;
+}
+
+.free_badge{
+    background-color: #ECFDF3!important;
+    color: #027A48!important;
+    font-family: 'Inter','sans-serif'!important;
+    font-weight: 500!important;
+    font-size: 12px!important;
+}
+.monthly_badge{
+    background-color: #FFE8E8!important;
+    color: #F64E60!important;
+    font-family: 'Inter','sans-serif'!important;
+    font-weight: 500!important;
+    font-size: 12px!important;
+}
+.yearly_badge{
+    background-color: #D7EAFF!important;
+    color: #007AFF!important;
+    font-family: 'Inter','sans-serif'!important;
+    font-weight: 500!important;
+    font-size: 12px!important;
 }

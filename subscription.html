@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/subscription.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" style="height: 100vh;">
+            <div class="col-2 col-sm-3 col-lg-2 col-xl-2 " style="border-right: groove;">
+                <div class="sticky-top">
+                    <nav class="navbar mt-2">
+                        <div class="container-fluid">
+                            <img width="55%" src="./assets/Logo-wide 1.png" alt="">
+                        </div>
+                    </nav>
+                    <ul class="nav flex-column">
+                        <li class="nav-item border-bottom border-bottom-dark">
+                            <a class="nav-link" aria-current="page" href="dashboard.html">
+                                <i class="fa-solid fa-cubes"></i>
+                                <span class="d-none d-sm-inline ms-2 span_tag">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border-bottom border-bottom-dark">
+                            <a class="nav-link" href="Users.html">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="d-none d-sm-inline ms-2 span_tag">Users</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border-bottom border-bottom-dark">
+                            <a class="nav-link" href="projects.html"><i class="fa-solid fa-diagram-project"></i>
+                                <span class="d-none d-sm-inline ms-2 span_tag">Projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border-bottom border-bottom-dark">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-crown"></i>
+                                <span class="d-none d-sm-inline ms-2 span_tag">Subscriptions</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-10 col-sm-9 col-lg-10 col-xl-10 p-0 m-0 ">
+                <nav class="navbar navbar-expand-lg border-bottom border-bottom-dark">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav d-flex justify-content-between w-100">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="span_tag"
+                                        style="border-left: solid;">Subscription</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle span_tag" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Admin
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="user_container p-1 m-5">
+                    <div class="d-flex gap-3 p-4">
+                        <div>
+                            <span>Date</span><br>
+                            <div class="d-flex align-items-center gap-2">
+                                <input type="date" name="date" id="date">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <input type="date" name="date" id="date">
+                            </div>
+                        </div>
+                        <div>
+                            <span>User Id</span><br>
+                            <div class="d-flex align-items-center gap-2">
+                                <input type="search" name="" id="" placeholder="Search">
+                                <div class="buttons ">
+                                    <button class="btn btn-primary btn_one">Search</button>
+                                    <button class="btn btn-primary  btn_two">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table id="example" class="table table-striped">
+
+                        <thead>
+                            <tr>
+                                <th>S/N</th>
+                                <th>Project ID</th>
+                                <th>Project Name</th>
+                                <th>Type</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>NTVP0003</td>
+                                <td>E-commerce</td>
+                                <td><span class="badge free_badge">Free</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>NTVP0003</td>
+                                <td>Shopping Mart</td>
+                                <td><span class="badge monthly_badge">Monthly</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>NTVP0003</td>
+                                <td>Trade Crypto</td>
+                                <td><span class="badge yearly_badge">Yearly</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>NTVP0003</td>
+                                <td>Gaming Landing Page</td>
+                                <td><span class="badge free_badge">Free</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script>
+        new DataTable('#example');
+    </script>
+</body>
+
+</html>
