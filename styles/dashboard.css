@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+ul,
+i {
+    color: #6200EE !important;
+}
+.col-lg-2 .nav-item:hover{
+    background-color: #7B76F14D;
+}
+.span_tag {
+    font-family: 'Figtree', 'sans-serif' ;
+    font-size: 16px ;
+    font-weight: 400 ;
+    color:black;
+}
+.col-lg-10 .span_tag{
+    font-family: 'Figtree', 'sans-serif' ;
+    font-size: 16px ;
+    font-weight: 400 ;
+    color:black;
+}
+.col-lg-10 .card h5{
+    font-family: 'Figtree', 'sans-serif' ;
+    font-size: 20px ;
+    font-weight: 600 ;
+    color:#6200EE;
+}
+.col-lg-10 .card p{
+    font-family: 'Figtree', 'sans-serif' ;
+    font-size: 16px ;
+    font-weight: 400 ;
+    color:#737791;
+}
+.col-lg-10 .card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.child_card_1{
+    background-color: #FFE2E5!important;
+    box-shadow: none!important;
+}
+.child_card_2{
+    background-color: #FFF4DE!important;
+    box-shadow: none!important;
+}
+.child_card_1 img{
+    border-radius: 50%;
+    background-color: #FA5A7D;
+}
+.child_card_2 img{
+    border-radius: 50%;
+    background-color: #FF947A;
+}
+.col-lg-5 .child_card_1 .card-title{
+    font-family: 'Figtree', 'sans-serif' ;
+    font-size: 16px ;
+    font-weight: 500 ;
+    color:#425166;
+}
+.col-lg-5 .child_card_1 .card-text{
+    font-family: 'Figtree', 'sans-serif' ;
+    font-size: 12px ;
+    font-weight: 500 ;
+    color:#6200EE;
+}
+.col-lg-5 .child_card_2 .card-title{
+    font-family: 'Figtree', 'sans-serif' ;
+    font-size: 16px ;
+    font-weight: 500 ;
+    color:#425166;
+}
+.col-lg-5 .child_card_2 .card-text{
+    font-family: 'Figtree', 'sans-serif' ;
+    font-size: 12px ;
+    font-weight: 500 ;
+    color:#6200EE;
+}
+.col-lg-5 .child_card_1,.child_card_2 span{
+    font-family: 'Figtree', 'sans-serif' ;
+    font-size: 24px ;
+    font-weight: 600 ;
+    color:#151D48;
+}
