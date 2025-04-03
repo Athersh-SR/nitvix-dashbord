@@ -80,3 +80,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .user_container table td button{
     background-color: #6200EE!important;
 }
+.dt-length label{
+    font-family: 'Figtree', 'sans-serif'!important;
+    font-weight: 400!important;
+    font-size: 14px!important;
+}
+.dt-search label{
+    font-family: 'Figtree', 'sans-serif'!important;
+    font-weight: 400!important;
+    font-size: 14px!important;
+}
+.dt-info{
+    font-family: 'Figtree', 'sans-serif'!important;
+    font-weight: 400!important;
+    font-size: 14px!important;
+}
+.right-shadow {
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2); 
+}

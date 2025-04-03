@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./styles/dashboard.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,39 +19,43 @@
 <body>
     <div class="container-fluid">
         <div class="row" style="height: 100vh;">
-            <div class="col-2 col-sm-3 col-lg-2 col-xl-2 " style="border-right: groove;">
-                <div class="sticky-top">
-                    <nav class="navbar mt-2">
-                        <div class="container-fluid">
-                            <img width="55%" src="./assets/Logo-wide 1.png" alt="">
-                        </div>
-                    </nav>
-                    <ul class="nav flex-column">
-                        <li class="nav-item border-bottom border-bottom-dark">
-                            <a class="nav-link" aria-current="page" href="#">
-                                <i class="fa-solid fa-cubes"></i>
-                                <span class="d-none d-sm-inline ms-2 span_tag">Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="nav-item border-bottom border-bottom-dark">
-                            <a class="nav-link" href="Users.html">
-                                <i class="fa-solid fa-user"></i>
-                                <span class="d-none d-sm-inline ms-2 span_tag">Users</span>
-                            </a>
-                        </li>
-                        <li class="nav-item border-bottom border-bottom-dark">
-                            <a class="nav-link" href="products.html"><i class="fa-solid fa-diagram-project"></i>
-                                <span class="d-none d-sm-inline ms-2 span_tag">Projects</span>
-                            </a>
-                        </li>
-                        <li class="nav-item border-bottom border-bottom-dark">
-                            <a class="nav-link" href="subscription.html"><i class="fa-solid fa-crown"></i>
-                                <span class="d-none d-sm-inline ms-2 span_tag">Subscriptions</span>
-                            </a>
-                        </li>
-                    </ul>
+            <div class="col-2 col-sm-3 col-lg-2 col-xl-2 right-shadow">
+                <div class="d-flex">
+                    <div class="d-flex flex-column flex-shrink-0 p-3 vh-100">
+                        <a href="#" class="d-flex justify-content-center align-items-center mb-3 text-decoration-none">
+                            <img src="./assets/Logo-wide 1.png" alt="Logo" width="50%">
+                        </a>
+                
+                    
+                        <ul class="nav flex-column gap-4 mt-2">
+                            <li class="nav-item border-bottom border-bottom-dark">
+                                <a href="#" class="nav-link text-dark">
+                                    <i class="fa-solid fa-cubes me-2"></i>
+                                    <span class="d-none d-sm-inline span_tag">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-bottom border-bottom-dark">
+                                <a href="Users.html" class="nav-link text-dark">
+                                    <i class="fa-solid fa-user me-2"></i>
+                                    <span class="d-none d-sm-inline span_tag">Users</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-bottom border-bottom-dark">
+                                <a href="projects.html" class="nav-link text-dark">
+                                    <i class="fa-solid fa-diagram-project me-2"></i>
+                                    <span class="d-none d-sm-inline span_tag">Projects</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-bottom border-bottom-dark">
+                                <a href="subscription.html" class="nav-link text-dark">
+                                    <i class="fa-solid fa-crown me-2"></i>
+                                    <span class="d-none d-sm-inline span_tag">Subscriptions</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                
                 </div>
-
             </div>
             <div class="col-10 col-sm-9 col-lg-10 col-xl-10 p-0 m-0 ">
                 <nav class="navbar navbar-expand-lg border-bottom border-bottom-dark">
@@ -69,7 +78,7 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="row">
+                <div class="row justify-content-center m-0">
                     <div class="col-10 col-sm-3 col-md-10 col-lg-4 ps-4 m-4">
                         <div class="card">
                             <div class="card-body">
@@ -105,7 +114,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">User Analysis</h5>
-                                <canvas id="myChart"></canvas>
+                                <figure class="highcharts-figure">
+                                    <div id="container"></div>
+                                </figure>
                             </div>
                         </div>
                     </div>
@@ -118,36 +129,62 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <script>
-    const xValues = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
-    new Chart("myChart", {
-        type: "line",
-        data: {
-            labels: xValues,
-            datasets: [{
-                label: "New Users",
-                data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
-                borderColor: "red",
-                fill: false
-            }, {
-                label: "Free Users",
-                data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
-                borderColor: "purple",
-                fill: false
-            }, {
-                label: "Paid Users",
-                data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
-                borderColor: "green",
-                fill: false
-            }]
+    Highcharts.chart('container', {
+        chart: {
+            type: 'spline',
+            scrollablePlotArea: {
+                minWidth: 600,
+                scrollPositionX: 1
+            }
         },
-        options: {
-            legend: { display: true }
+
+        xAxis: {
+            categories: [
+                'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+            ],
+            accessibility: {
+                rangeDescription: 'Range: Jan to Dec'
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle'
+        },
+        plotOptions: {
+            series: {
+                label: {
+                    connectorAllowed: false
+                },
+                pointStart: 0
+            }
+        },
+        series: [{
+            name: 'Free Users',
+            data: [310, 190, 310, 140]
+        }, {
+            name: 'Paid Users',
+            data: [250, 350, 212, 300, 200]
+        }, {
+            name: 'New Users',
+            data: [225, 125, 350, 125]
+        }],
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'bottom'
+                    }
+                }
+            }]
         }
     });
-
 </script>
 
 </html>

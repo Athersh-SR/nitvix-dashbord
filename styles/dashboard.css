@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-ul,
+ ul,
 i {
     color: #6200EE !important;
 }
@@ -79,4 +79,7 @@ i {
     font-size: 24px ;
     font-weight: 600 ;
     color:#151D48;
+}
+.right-shadow {
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2); 
 }
