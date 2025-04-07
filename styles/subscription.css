@@ -5,7 +5,7 @@ ul,
 i {
     color: #6200EE !important;
 }
-.col-lg-2 .nav-item:hover{
+.sidebar ul  .nav-item:hover {
     background-color: #7B76F14D;
 }
 .span_tag {
@@ -117,4 +117,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .right-shadow {
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2); 
+}
+#example_wrapper{
+    padding: 1%!important;
 }
