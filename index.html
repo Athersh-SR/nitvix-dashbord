@@ -37,17 +37,26 @@
             </div>
         </div>
     </section>
-    <form id="loginForm" class="d-flex flex-column justify-content-center align-items-center gap-2">
-        <label for="email">Email</label>
-        <input type="email" id="email" class="form-control">
 
-        <label for="password">Password</label>
-        <input type="password" id="password" class="form-control">
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (e) {
+            e.preventDefault();
 
-        <button id="Login" type="submit" class="btn btn-primary btn-lg mt-3">Login</button>
-    </form>
-    
-   
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("Password").value;
+
+            const validEmail = "user@example.com";
+            const validPassword = "password123";
+
+            if (email === validEmail && password === validPassword) {
+                window.location.href = "dashboard.html";
+            } else {
+                alert("Invalid email or password");
+            }
+        });
+    </script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
