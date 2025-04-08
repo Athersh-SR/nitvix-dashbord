@@ -117,8 +117,59 @@
             transition: margin-left 0.5s ease;
         }
 
-        .sidebar.active ~ .home_content {
+        .sidebar.active~.home_content {
             margin-left: 240px;
+        }
+
+
+        @media (max-width:768px) {
+            .sidebar {
+                width: 0px;
+                overflow: hidden;
+            }
+
+            .home_content {
+                position: relative;
+                height: 100%;
+                margin-left: 29px;
+                transition: margin-left 0.5s ease;
+            }
+
+            .navbar-nav {
+                flex-direction: row !important;
+                padding-left: 0 !important;
+                margin-bottom: 0 !important;
+                list-style: none !important;
+            }
+
+            .col-10 {
+                width: 100% !important;
+            }
+
+            .sidebar.active {
+                width: 240px;
+            }
+
+            .sidebar.active~.home_content {
+                margin-left: 0 !important;
+            }
+
+            .home_content {
+                margin-left: 22;
+                position: relative;
+                z-index: 0;
+            }
+
+            .sidebar {
+                background-color: white;
+                z-index: 999;
+            }
+        }
+
+        @media (width=768px) {
+            .col-10 {
+                width: 83% !important;
+            }
         }
     </style>
 
@@ -163,14 +214,14 @@
     <div class="home_content">
         <nav class="navbar navbar-expand-lg border-bottom border-bottom-dark">
             <div class="container-fluid">
-                <ul class="navbar-nav d-flex flex-md-row justify-content-between w-100">
+                <ul class="navbar-nav d-flex justify-content-between w-100">
                     <li class="nav-item">
                         <a class="nav-link" href="#"><span class="span_tag ps-2"
                                 style="border-left: solid;">Dashboard</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a style="color: black!important;" class="nav-link dropdown-toggle span_tag" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a style="color: black!important;" class="nav-link dropdown-toggle span_tag" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Admin
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -182,7 +233,7 @@
             </div>
         </nav>
         <div class="row justify-content-center m-0">
-            <div class="col-12 col-sm-3 col-md-10 col-lg-4 ps-4 m-4">
+            <div class="col-12 col-sm-3 col-md-10 col-lg-4 ps-1 ps-lg-3 m-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Insights</h5>
@@ -213,7 +264,7 @@
                 </div>
             </div>
 
-            <div class="col-10 col-sm-5 col-md-10 col-lg-6 ps-4 m-4">
+            <div class="col-10 col-sm-5 col-md-10 col-lg-6 ps-1 ps-lg-3 m-4 graph_class_width">
                 <div class="card graph_class">
                     <div class="card-body">
                         <h5 class="card-title">User Analysis</h5>
