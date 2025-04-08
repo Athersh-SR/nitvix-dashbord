@@ -50,7 +50,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 14px!important ;
     color: #000000!important ;
 }
-.user_container .buttons .btn_one{
+.user_container .btn_one{
     background-color: #6200EE!important;
     font-family: 'Figtree', 'sans-serif'!important ;
     font-weight: 500!important  ;
@@ -58,7 +58,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: none;
     border-radius: 6px;
 }
-.user_container .buttons .btn_two{
+.user_container .btn_two{
     background-color: #D7BBFF!important;
     font-family: 'Figtree', 'sans-serif'!important ;
     font-weight: 500!important  ;
@@ -97,4 +97,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 #example_wrapper{
     padding: 1%!important;
+}
+
+
+@media (min-width:320px) and (max-width:580px) {
+    .dt-search{
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
 }
