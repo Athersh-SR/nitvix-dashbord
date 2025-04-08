@@ -12,14 +12,17 @@
     background-image: url(../assets/bg-left.png);
     object-fit: cover;
 }
-.login-container .column_one img{
+
+.login-container .column_one img {
     max-height: 100vh;
     width: 100%;
     object-fit: contain;
 }
-.login-container .column_two form{
+
+.login-container .column_two form {
     margin-top: 111px;
 }
+
 .login-container .column_two .btn-primary {
     background-color: #6200EE !important;
     font-family: 'Figtree', 'sans-serif';
@@ -27,8 +30,10 @@
     font-size: 18px;
     vertical-align: middle;
 }
-.login-container .column_two .btn-lg,input{
-    width:70%!important;
+
+.login-container .column_two .btn-lg,
+input {
+    width: 70% !important;
     font-family: 'Figtree', 'sans-serif';
     font-weight: 400;
     font-size: 16px;
@@ -42,36 +47,85 @@
     color: rgb(78, 68, 68);
 }
 
-.login-container .column_two  input {
+.login-container .column_two input {
     border: none;
     border-bottom: 2px solid rgb(78, 68, 68);
     outline: none;
     padding: 8px;
     font-size: 16px;
-    width:70%!important;
+    width: 70% !important;
 }
-@media(width=1024px){
+
+@media(width=1024px) {
     .email_class {
         position: relative;
         right: 155px;
         top: 13px;
     }
-    .password_class{
+
+    .password_class {
         position: relative;
         right: 143px;
         top: 13px;
     }
 }
 
-@media (width>1024px){
+@media (width>1024px) {
     .email_class {
         position: relative;
         right: 209px;
         top: 13px;
     }
-    .password_class{
+
+    .password_class {
         position: relative;
         right: 198px;
         top: 13px;
     }
 }
+
+.fa-eye,.fa-eye-slash {
+    position: relative;
+    left: 217px;
+    bottom: 43px;
+}
+
+@media (width=768px) {
+    .fa-eye,.fa-eye-slash  {
+        position: relative;
+        left: 116px;
+        bottom: 43px
+    }
+}
+
+@media (width=1024px) {
+    .fa-eye,.fa-eye-slash {
+        position: relative;
+        left: 159px;
+        bottom: 43px;
+    }
+}
+
+@media (width=425px) {
+    .fa-eye,.fa-eye-slash  {
+        position: relative;
+        left: 54px;
+        bottom: 43px
+    }
+}
+
+@media (width=375px) {
+    .fa-eye,.fa-eye-slash {
+        position: relative;
+        left: 48px;
+        bottom: 43px;
+    }
+}
+
+@media (width=320px) {
+    .fa-eye,.fa-eye-slash {
+        position: relative;
+        left: 39px;
+        bottom: 43px;
+    }
+} 

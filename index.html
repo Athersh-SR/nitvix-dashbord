@@ -31,6 +31,7 @@
                         <input type="email" name="" id="email">
                         <label for="Password" class="password_class">Password</label>
                         <input type="password" name="" id="Password">
+                        <i class="fa-regular fa-eye-slash" id="pass_icon"></i>
                         <button type="submit" class="btn btn-primary btn-lg mt-3" id="button">Login</button>
                     </form>
                 </div>
@@ -54,6 +55,19 @@
                 alert("Invalid email or password");
             }
         });
+
+
+
+        const passIcon = document.getElementById('pass_icon');
+        const passwordField = document.getElementById('Password');
+
+        passIcon.addEventListener('click', () => {
+            const isPassword = passwordField.type === 'password';
+            passwordField.type = isPassword ? 'text' : 'password';
+            passIcon.classList.toggle('fa-eye-slash');
+            passIcon.classList.toggle('fa-eye');
+        });
+
     </script>
 
 
