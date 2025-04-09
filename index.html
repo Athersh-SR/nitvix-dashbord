@@ -6,27 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nitvix-Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+        html,
+        body {
+            overflow: hidden;
+        }
+
+        .login-container .img_title {
+            font-family: 'Figtree', 'sans-serif';
+            font-weight: 800;
+            font-size: 24px;
+            letter-spacing: 3%;
+        }
+
+        .column_one {
+            background-image: url(assets/bg-left.png);
+            object-fit: cover;
+        }
+
+        .login-container .column_one img {
+            max-height: 100vh;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .login-container .column_two form {
+            margin-top: 111px;
+        }
+
+        .login-container .column_two .btn-primary {
+            background-color: #6200EE !important;
+            font-family: 'Figtree', 'sans-serif';
+            font-weight: 700;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+        .login-container .column_two .btn-lg,
+        input {
+            width: 70% !important;
+            font-family: 'Figtree', 'sans-serif';
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .login-container .column_two label {
+            font-family: 'Figtree', 'sans-serif';
+            font-weight: 400;
+            font-size: 12.8px;
+            line-height: 15.53px;
+            color: rgb(78, 68, 68);
+        }
+
+        .login-container .column_two input {
+            border: none;
+            border-bottom: 2px solid rgb(78, 68, 68);
+            outline: none;
+            padding: 8px;
+            font-size: 16px;
+            width: 70% !important;
+        }
+
+        #pass_icon {
+            position: absolute;
+            left: 81%;
+            bottom: 40%;
+        }
+
+        @media(max-width:768px) {
+
+            .column_one {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <section class="login-container">
         <div class="container-fluid">
             <div style="height: 100vh;" class="row">
-                <div
-                    class="col-6 col-md-6 col-lg-6 column_one d-flex flex-column justify-content-center align-items-center">
+                <div class="col-lg-6 column_one flex-column justify-content-center align-items-center">
                     <p class="img_title text-center pt-4">"Empower your creativity.<br>
                         Manage with ease. Welcome to<br>
                         your control center."</p>
                     <img src="./assets/nohat_bg_removed_16ec359e 1.png" alt="">
                 </div>
-                <div class="col-6 col-md-6 col-lg-6 column_two ">
+                <div class="col-lg-6 column_two ">
                     <div style="margin-top: 118px;" class="text-center">
                         <img src="./assets/Logo-wide 1.png" alt="">
                     </div>
-                    <form id="loginForm" class="d-flex flex-column justify-content-center align-items-center gap-2">
+                    <form id="loginForm" style="position: relative;"
+                        class="d-flex flex-column justify-content-center align-items-center gap-2">
                         <label for="email" class="email_class">Email</label>
                         <input type="email" name="" id="email">
                         <label for="Password" class="password_class">Password</label>
