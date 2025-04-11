@@ -1,126 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 ul,
 i {
     color: #6200EE !important;
 }
-.sidebar ul  .nav-item:hover {
+
+.sidebar ul .nav-item:hover {
     background-color: #7B76F14D;
 }
+
 .span_tag {
-    font-family: 'Figtree', 'sans-serif' ;
-    font-size: 16px ;
-    font-weight: 400 ;
-    color: black !important;;
+    font-family: 'Figtree', 'sans-serif';
+    font-size: 16px;
+    font-weight: 400;
+    color: black !important;
+    ;
 }
+
 .user_container input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 }
+
 .user_container input[type="date"] {
     font-size: 14px;
-    font-family: 'Figtree', 'sans-serif' ;
+    font-family: 'Figtree', 'sans-serif';
     text-transform: uppercase;
     padding: 6px;
     border: 1px solid gray;
     border-radius: 5px;
     background-color: #f8f9fa;
-    color:gray;
-    font-weight: 400 ;
+    color: gray;
+    font-weight: 400;
 }
+
 .user_container {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-.user_container i{
-    color: gray!important;
+
+.user_container i {
+    color: gray !important;
 }
-.user_container input[type="search"]{
-    font-family: 'Figtree', 'sans-serif' ;
-    font-weight: 400 ;
+
+.user_container input[type="search"] {
+    font-family: 'Figtree', 'sans-serif';
+    font-weight: 400;
     font-size: 14px;
     border: 1px solid gray;
     border-radius: 5px;
     color: gray;
     padding: 6px;
 }
-.user_container span{
-    font-family: 'Figtree', 'sans-serif'!important ;
-    font-weight: 400!important  ;
-    font-size: 14px!important ;
-    color: #000000!important ;
+
+.user_container span {
+    font-family: 'Figtree', 'sans-serif' !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    color: #000000;
 }
-.user_container  .btn_one{
-    background-color: #6200EE!important;
-    font-family: 'Figtree', 'sans-serif'!important ;
-    font-weight: 500!important  ;
-    font-size: 16px!important ;
+
+.user_container .btn_one {
+    background-color: #6200EE !important;
+    font-family: 'Figtree', 'sans-serif' !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
     border: none;
     border-radius: 6px;
 }
-.user_container .btn_two{
-    background-color: #D7BBFF!important;
-    font-family: 'Figtree', 'sans-serif'!important ;
-    font-weight: 500!important  ;
-    font-size: 16px!important ;
+
+.user_container .btn_two {
+    background-color: #D7BBFF !important;
+    font-family: 'Figtree', 'sans-serif' !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
     border: none;
     border-radius: 6px;
 }
-.user_container th{
-    font-family: 'Figtree', 'sans-serif'!important ;
-    font-weight: 600!important;
-    font-size: 14px!important;
-    color: #6200EE; 
+
+.user_container th {
+    font-family: 'Figtree', 'sans-serif' !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #6200EE;
 }
-.user_container table td{
-    font-family: 'Figtree', 'sans-serif'!important;
+
+.user_container table td {
+    font-family: 'Figtree', 'sans-serif' !important;
     font-weight: 500;
     font-size: 14px;
 }
 
-.free_badge{
-    background-color: #ECFDF3!important;
-    color: #027A48!important;
-    font-family: 'Inter','sans-serif'!important;
-    font-weight: 500!important;
-    font-size: 12px!important;
+.free_badge {
+    background-color: #ECFDF3 !important;
+    color: #027A48 !important;
+    font-family: 'Inter', 'sans-serif' !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
 }
-.monthly_badge{
-    background-color: #FFE8E8!important;
-    color: #F64E60!important;
-    font-family: 'Inter','sans-serif'!important;
-    font-weight: 500!important;
-    font-size: 12px!important;
+
+.monthly_badge {
+    background-color: #FFE8E8 !important;
+    color: #F64E60 !important;
+    font-family: 'Inter', 'sans-serif' !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
 }
-.yearly_badge{
-    background-color: #D7EAFF!important;
-    color: #007AFF!important;
-    font-family: 'Inter','sans-serif'!important;
-    font-weight: 500!important;
-    font-size: 12px!important;
+
+.yearly_badge {
+    background-color: #D7EAFF !important;
+    color: #007AFF !important;
+    font-family: 'Inter', 'sans-serif' !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
 }
-.dt-length label{
-    font-family: 'Figtree', 'sans-serif'!important;
-    font-weight: 400!important;
-    font-size: 14px!important;
+
+.dt-length label {
+    font-family: 'Figtree', 'sans-serif' !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
 }
-.dt-search label{
-    font-family: 'Figtree', 'sans-serif'!important;
-    font-weight: 400!important;
-    font-size: 14px!important;
+
+.dt-search label {
+    font-family: 'Figtree', 'sans-serif' !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
 }
-.dt-info{
-    font-family: 'Figtree', 'sans-serif'!important;
-    font-weight: 400!important;
-    font-size: 14px!important;
+
+.dt-info {
+    font-family: 'Figtree', 'sans-serif' !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
 }
+
 .right-shadow {
-    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
 }
-#example_wrapper{
-    padding: 1%!important;
+
+#example_wrapper {
+    padding: 1% !important;
 }
+
+.badge.monthly_badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #E63946;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+.badge.yearly_badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #007AFF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+.badge.free_badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #12B76A;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+
 
 
 
@@ -128,7 +178,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 @media (min-width:320px) and (max-width:580px) {
-    .dt-search{
+    .dt-search {
         margin-top: 6%;
         margin-bottom: 6%;
     }
