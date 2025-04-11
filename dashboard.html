@@ -101,17 +101,6 @@
             line-height: 50px;
         }
 
-        .sidebar .links_name {
-            opacity: 0;
-            pointer-events: none;
-            transition: all 0.5s ease;
-        }
-
-        .sidebar.active .links_name {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
         .home_content {
             position: relative;
             height: 100%;
@@ -234,6 +223,32 @@
             font-size: 16px;
             width: 70% !important;
         }
+
+        .side-baricon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .side-barname {
+            font-family: Figtree;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+
+        }
+
+        .sidebar .side-barname {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            overflow: visible;
+        }
+
+        .sidebar:not(.active) .side-barname {
+            opacity: 0;
+            overflow: hidden;
+        }
     </style>
 
 </head>
@@ -247,28 +262,28 @@
             <i class="fa-solid fa-bars" id="btn"></i>
         </div>
         <ul class="nav_list d-flex flex-column gap-2 list-unstyled">
-            <li class="nav-item border-bottom border-bottom-dark"style="background-color: #7B76F14D;">
+            <li class="nav-item border-bottom border-bottom-dark" style="background-color: #7B76F14D;">
                 <a href="#" class="nav-link text-dark">
-                    <img class="me-2" src="./assets/dashboard icon.svg" alt="">
-                    <span class="span_tag links_name">Dashboard</span>
+                    <img class="side-baricon me-2" src="./assets/dashboard icon.svg" alt="">
+                    <span class="side-barname">Dashboard</span>
                 </a>
             </li>
             <li class="nav-item border-bottom border-bottom-dark">
                 <a href="Users.html" class="nav-link text-dark">
-                    <img class="me-2" src="./assets/User icon.svg"alt="">
-                    <span class="span_tag links_name">Users</span>
+                    <img class="side-baricon me-2" src="./assets/User icon.svg" alt="">
+                    <span class="side-barname">Users</span>
                 </a>
             </li>
             <li class="nav-item border-bottom border-bottom-dark">
                 <a href="projects.html" class="nav-link text-dark">
-                    <img class="me-2" src="./assets/Project icon.svg"alt="">
-                    <span class="span_tag links_name">Projects</span>
+                    <img class="side-baricon me-2" src="./assets/Project icon.svg" alt="">
+                    <span class="side-barname">Projects</span>
                 </a>
             </li>
             <li class="nav-item border-bottom border-bottom-dark">
                 <a href="subscription.html" class="nav-link text-dark">
-                    <img class="me-2" src="./assets/Subscription icon.svg"alt="">
-                    <span class="span_tag links_name">Subscriptions</span>
+                    <img class="side-baricon me-2" src="./assets/Subscription icon.svg" alt="">
+                    <span class="side-barname">Subscriptions</span>
                 </a>
             </li>
         </ul>
