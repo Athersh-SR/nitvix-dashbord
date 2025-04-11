@@ -16,6 +16,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -171,12 +173,73 @@
                 width: 83% !important;
             }
         }
+
+
+        html,
+        body {
+            overflow: hidden;
+        }
+
+        .login-container .img_title {
+            font-family: 'Figtree', 'sans-serif';
+            font-weight: 800;
+            font-size: 24px;
+            letter-spacing: 3%;
+        }
+
+        .login-container .column_one {
+            background-image: url(../assets/bg-left.png);
+            object-fit: cover;
+        }
+
+        .login-container .column_one img {
+            max-height: 100vh;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .login-container .column_two form {
+            margin-top: 111px;
+        }
+
+        .login-container .column_two .btn-primary {
+            background-color: #6200EE !important;
+            font-family: 'Figtree', 'sans-serif';
+            font-weight: 700;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+        .login-container .column_two .btn-lg,
+        input {
+            width: 70% !important;
+            font-family: 'Figtree', 'sans-serif';
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .login-container .column_two label {
+            font-family: 'Figtree', 'sans-serif';
+            font-weight: 400;
+            font-size: 12.8px;
+            line-height: 15.53px;
+            color: rgb(78, 68, 68);
+        }
+
+        .login-container .column_two input {
+            border: none;
+            border-bottom: 2px solid rgb(78, 68, 68);
+            outline: none;
+            padding: 8px;
+            font-size: 16px;
+            width: 70% !important;
+        }
     </style>
 
 </head>
 
 <body>
-    <div class="sidebar container-fluid right-shadow">
+    <div class="sidebar container-fluid right-shadow active">
         <div class="logo_content">
             <div class="logo ">
                 <img src="./assets/Logo-wide 1.png" alt="">
