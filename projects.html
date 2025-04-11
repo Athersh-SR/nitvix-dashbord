@@ -195,6 +195,11 @@
       text-align: center;
 
     }
+    @media (max-width: 768px) {
+    .responsive-flex {
+      flex-wrap: wrap !important;
+    }
+  }
   </style>
 
 </head>
@@ -269,7 +274,7 @@
 
         <div class="col-12 col-sm-6 col-md-4">
           <label class="form-label span_tag">User ID,Project ID</label>
-          <div class="d-flex align-items-center gap-2 flex-wrap">
+          <div class="d-flex align-items-center gap-2 responsive-flex">
             <input type="search" class="form-control" placeholder="Search" />
             <div class="d-flex gap-2 mt-2 mt-sm-0">
               <button class="btn btn-primary btn_one">Search</button>

@@ -125,3 +125,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         margin-bottom: 6%;
     }
 }
+@media (max-width: 768px) {
+    .responsive-flex {
+      flex-wrap: wrap !important;
+    }
+  }
+  
